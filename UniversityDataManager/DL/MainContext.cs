@@ -26,6 +26,8 @@ namespace UniversityDataManager.DL
         {
             Database.SetInitializer<MainContext>(null);
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<User>().HasOptional(x => x.Student).WithRequired(x => x.User);
+            modelBuilder.Entity<User>().HasOptional(x => x.Professor).WithRequired(x => x.User);
         }
 
         public static MainContext Create()

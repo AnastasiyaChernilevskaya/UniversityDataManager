@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using UniversityDataManager.DL.Entities.Enums;
 
 namespace UniversityDataManager.DL.Entities
 {
@@ -13,6 +14,7 @@ namespace UniversityDataManager.DL.Entities
         public double MaxRating { get; set; }
         public string Description { get; set; }
         public string Comments { get; set; }
+        public ProjectType Type { get; set; }
 
         public virtual Professor Creator { get; set; }
 

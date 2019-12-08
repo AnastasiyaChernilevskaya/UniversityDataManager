@@ -166,6 +166,7 @@
     <Compile Include="DL\Entities\BaseEntity.cs" />
     <Compile Include="DL\Entities\Discipline.cs" />
     <Compile Include="DL\Entities\Enums\ProjectState.cs" />
+    <Compile Include="DL\Entities\Enums\ProjectType.cs" />
     <Compile Include="DL\Entities\Group.cs" />
     <Compile Include="DL\Entities\ProjectLog.cs" />
     <Compile Include="DL\Entities\Professor.cs" />
@@ -177,6 +178,14 @@
     <Compile Include="DL\MainContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910230554162_update.cs" />
+    <Compile Include="Migrations\201910230554162_update.Designer.cs">
+      <DependentUpon>201910230554162_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912081606497_ProjectType.cs" />
+    <Compile Include="Migrations\201912081606497_ProjectType.Designer.cs">
+      <DependentUpon>201912081606497_ProjectType.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -266,6 +275,14 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201910230554162_update.resx">
+      <DependentUpon>201910230554162_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912081606497_ProjectType.resx">
+      <DependentUpon>201912081606497_ProjectType.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
